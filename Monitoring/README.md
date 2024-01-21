@@ -41,6 +41,8 @@
 1. Прикрепите в файл README.md скриншот авторизации в админке.
 2. Приложите в файл README.md текст использованных команд в GitHub.
 
+
+#### Решение:
 `Статус службы Zabbix Server` - [Zabbix-server](https://github.com/sash3939/Zabbix/assets/156709540/b3a44590-590c-4b24-8c93-b324e7e66fcb)
 
 
