@@ -90,7 +90,7 @@
 `[Agent1](https://github.com/sash3939/Zabbix/assets/156709540/a541f3bb-5bc7-4b83-b74a-0680c12ebb58), [Memory_Graph_Agent1](https://github.com/sash3939/Zabbix/assets/156709540/1e704acd-040e-4e5c-96e6-9a5675f27175)`
 `[Agent2](https://github.com/sash3939/Zabbix/assets/156709540/4afbc5de-19f0-4500-a279-3735ed6362dc), [Memory_Grapg_Agent2](https://github.com/sash3939/Zabbix/assets/156709540/e75b0166-41ab-4b4e-b122-a32ba3f3e8db)`
 5. Приложите в файл README.md текст использованных команд в GitHub -
-### tail -f /var/log/zabbix/zabbix_agent.log
+#### tail -f /var/log/zabbix/zabbix_agent.log ####
 
 ---
 ## Задание 3 со звёздочкой*
