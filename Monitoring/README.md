@@ -49,21 +49,21 @@
 
 `команды`
 #### apt install postgresql ####
-*** wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
-*** dpkg -i zabbix-release_6.0-5+debian12_all.deb
-*** lsof /var/lib/dpkg/lock
-*** ps cax | grep 945
-*** kill 945
-*** dpkg -i zabbix-release_6.0-5+debian12_all.deb
-*** apt update
-*** apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts
-*** su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
-*** sudo -u postgres createdb -O zabbix zabbix
-*** zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
-*** nano /etc/zabbix/zabbix_server.conf
-*** zabbix restart zabbix_server apache2
-*** systemctl status zabbix-server.service
-*** systemctl enable zabbix-server.service
+#### wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb ####
+#### dpkg -i zabbix-release_6.0-5+debian12_all.deb ####
+#### lsof /var/lib/dpkg/lock ####
+#### ps cax | grep 945 ####
+#### kill 945 ####
+#### dpkg -i zabbix-release_6.0-5+debian12_all.deb ####
+#### apt update ####
+#### apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts ####
+#### su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"' ####
+#### sudo -u postgres createdb -O zabbix zabbix ####
+#### zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix ####
+#### nano /etc/zabbix/zabbix_server.conf ####
+#### zabbix restart zabbix_server apache2 ####
+#### systemctl status zabbix-server.service ####
+#### systemctl enable zabbix-server.service ####
 ---
 
 ### Задание 2 
