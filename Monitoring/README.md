@@ -47,6 +47,23 @@
 `Админка Zabbix` - [zabbix Admin](https://github.com/sash3939/Zabbix/assets/156709540/db49dccd-b40c-4231-8ad1-ef4dc3c61007)
 
 
+`команды`
+# apt install postgresql
+# wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
+# dpkg -i zabbix-release_6.0-5+debian12_all.deb
+# lsof /var/lib/dpkg/lock
+# ps cax | grep 945
+# kill 945
+# dpkg -i zabbix-release_6.0-5+debian12_all.deb
+# apt update
+# apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts
+# su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
+# sudo -u postgres createdb -O zabbix zabbix
+# zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+# nano /etc/zabbix/zabbix_server.conf
+# zabbix restart zabbix_server apache2
+# systemctl status zabbix-server.service
+# systemctl enable zabbix-server.service
 ---
 
 ### Задание 2 
@@ -66,12 +83,21 @@
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 4. Приложите в файл README.md текст использованных команд в GitHub
 
+#### Решение
+1. Подключены к серверу - [status](https://github.com/sash3939/Zabbix/assets/156709540/f8374bb6-8b84-46be-aca5-481c9ee103c6)
+2. Скриншот лога zabbix agent, где видно, что он работает с сервером -[log](https://github.com/sash3939/Zabbix/assets/156709540/b3f73406-98cd-46e8-9cc5-9e8b6d777cee)
+3. Скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные. -
+`[Agent1](https://github.com/sash3939/Zabbix/assets/156709540/a541f3bb-5bc7-4b83-b74a-0680c12ebb58), [Memory_Graph_Agent1](https://github.com/sash3939/Zabbix/assets/156709540/1e704acd-040e-4e5c-96e6-9a5675f27175)`
+`[Agent2](https://github.com/sash3939/Zabbix/assets/156709540/4afbc5de-19f0-4500-a279-3735ed6362dc), [Memory_Grapg_Agent2](https://github.com/sash3939/Zabbix/assets/156709540/e75b0166-41ab-4b4e-b122-a32ba3f3e8db)`
+5. Приложите в файл README.md текст использованных команд в GitHub - tail -f /var/log/zabbix/zabbix_agent.log
+
 ---
 ## Задание 3 со звёздочкой*
 Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
 
-#### Требования к результаты 
-1. Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:
+#### Требования к результаты. Решение:
+1. Скриншот раздела Latest Data, где видно свободное место на диске C: - [free space](https://github.com/sash3939/Zabbix/assets/156709540/fca2ccf5-d082-4607-b5ef-b19681ab79e3)
+
 --- 
 
 ## Критерии оценки
