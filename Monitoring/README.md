@@ -48,22 +48,22 @@
 
 
 `команды`
-### apt install postgresql
-### wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
-### dpkg -i zabbix-release_6.0-5+debian12_all.deb
-### lsof /var/lib/dpkg/lock
-### ps cax | grep 945
-### kill 945
-### dpkg -i zabbix-release_6.0-5+debian12_all.deb
-### apt update
-### apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts
-### su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
-### sudo -u postgres createdb -O zabbix zabbix
-### zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
-### nano /etc/zabbix/zabbix_server.conf
-### zabbix restart zabbix_server apache2
-### systemctl status zabbix-server.service
-### systemctl enable zabbix-server.service
+*** apt install postgresql ***
+*** wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
+*** dpkg -i zabbix-release_6.0-5+debian12_all.deb
+*** lsof /var/lib/dpkg/lock
+*** ps cax | grep 945
+*** kill 945
+*** dpkg -i zabbix-release_6.0-5+debian12_all.deb
+*** apt update
+*** apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts
+*** su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
+*** sudo -u postgres createdb -O zabbix zabbix
+*** zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+*** nano /etc/zabbix/zabbix_server.conf
+*** zabbix restart zabbix_server apache2
+*** systemctl status zabbix-server.service
+*** systemctl enable zabbix-server.service
 ---
 
 ### Задание 2 
@@ -90,7 +90,7 @@
 `[Agent1](https://github.com/sash3939/Zabbix/assets/156709540/a541f3bb-5bc7-4b83-b74a-0680c12ebb58), [Memory_Graph_Agent1](https://github.com/sash3939/Zabbix/assets/156709540/1e704acd-040e-4e5c-96e6-9a5675f27175)`
 `[Agent2](https://github.com/sash3939/Zabbix/assets/156709540/4afbc5de-19f0-4500-a279-3735ed6362dc), [Memory_Grapg_Agent2](https://github.com/sash3939/Zabbix/assets/156709540/e75b0166-41ab-4b4e-b122-a32ba3f3e8db)`
 5. Приложите в файл README.md текст использованных команд в GitHub -
-###tail -f /var/log/zabbix/zabbix_agent.log
+### tail -f /var/log/zabbix/zabbix_agent.log
 
 ---
 ## Задание 3 со звёздочкой*
