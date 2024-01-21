@@ -44,6 +44,7 @@
 
 #### Решение:
 `Статус службы Zabbix Server` - [Zabbix-server](https://github.com/sash3939/Zabbix/assets/156709540/b3a44590-590c-4b24-8c93-b324e7e66fcb)
+`Админка Zabbix` - [zabbix Admin](https://github.com/sash3939/Zabbix/assets/156709540/db49dccd-b40c-4231-8ad1-ef4dc3c61007)
 
 
 ---
